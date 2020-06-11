@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  name: "dev",
+  name: 'dev',
   settings: {
-    backend: "localhost:8033"
+    backend: 'localhost:8033'
   }
 };
 

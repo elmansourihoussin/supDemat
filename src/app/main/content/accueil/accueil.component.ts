@@ -39,6 +39,10 @@ export class AccueilComponent  {
   yAxisLabel: string = 'Population';
   timeline: boolean = true;
 
+  showXAxis: boolean = true;
+  showYAxis: boolean = true;
+
+
   colorScheme = {
     domain: ['#5AA454', '#A10A28', '#C7B42C', '#AAAAAA']
   };

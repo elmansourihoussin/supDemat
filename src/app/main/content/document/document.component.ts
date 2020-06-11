@@ -15,6 +15,8 @@ export class DocumentComponent implements OnInit {
 
   formdt: FormGroup;
 
+  loadingIndicator = true;
+
   constructor(private documentService: DocumentService, private fb: FormBuilder) { 
     this.formdt = this.fb.group({
       dt_debut: '',
