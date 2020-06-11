@@ -1,0 +1,11 @@
+<div class="border-bottom mb-3">
+    <h3 mat-dialog-title class="text-dark">Confirmation</h3>
+</div>
+<div class="p-3">
+    <span>{{confirmMessage}}</span> 
+</div>
+
+<div class="border-top mt-3 pt-3">
+    <button class="mat-raised-button mat-primary float-right" (click)="dialogRef.close(true)">Confirmer</button>
+    <button class="mat-raised-button bg-secondary text-white" (click)="dialogRef.close(false)" >Annuler</button>
+</div>

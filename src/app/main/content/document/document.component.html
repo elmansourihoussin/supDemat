@@ -1,0 +1,73 @@
+<div class="container-fluid border border-dark bg-light mt-3 p-4">
+   <div class="row justify-content-center">
+
+    <div class="col-md-10 m-3 p-2">
+        <form [formGroup]="formdt">
+            <input type="datetime-local" formControlName="dt_debut" class="form-controle">
+            <input type="date" formControlName="dt_fin">
+            <button (click)="envoyerdt()" class="btn btn-primary">Envoyer</button>
+        </form>
+    </div>
+
+    <div class="card col-md-10">
+        <input
+        type="text"
+        style="padding:8px;margin:15px auto;width:30%;"
+        placeholder="Type to filter the name column..."
+        (keyup)="updateFilter($event)"
+      />
+    </div>
+
+    <ngx-datatable
+    class="material col-md-10"
+    [rows]="rows"
+    [loadingIndicator]="loadingIndicator"
+    [headerHeight]="50"
+    [footerHeight]="50"
+    [limit]="10">
+    
+    <ngx-datatable-column name="document_ID">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.document_ID}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="document_LOT_NOM">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.document_LOT_NOM}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="document_DATE_ACQUISITION">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.document_DATE_ACQUISITION | date}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="idoc_CNT_IDE">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.idoc_CNT_IDE}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="idoc_COD_OAP">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.idoc_COD_OAP}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="document_DATE_ENREG">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.document_DATE_ENREG | date}}
+        </ng-template>
+    </ngx-datatable-column>
+
+    <ngx-datatable-column name="document_NOM_FIC">
+        <ng-template ngx-datatable-cell-template let-row="row">
+            {{row.document_NOM_FIC}}
+        </ng-template>
+    </ngx-datatable-column>
+
+  </ngx-datatable>
+   </div>
+</div>

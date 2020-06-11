@@ -1,0 +1,30 @@
+<div class="container-fluid" style="height: 1500px;">
+    <div class="row">
+   
+         <div class="col-md-12">
+               <h2 class="pt-2 pb-2 border-bottom border-secondary mb-5">Situation de 05-06-2020</h2>
+         </div>
+
+
+        <div class="col-md-12">
+            <div class="card">
+                <ngx-charts-bar-horizontal
+  [view]="view"
+  [scheme]="colorScheme"
+  [results]="single"
+  [gradient]="gradient"
+  [xAxis]="showXAxis"
+  [yAxis]="showYAxis"
+  [legend]="showLegend"
+  [showXAxisLabel]="showXAxisLabel"
+  [showYAxisLabel]="showYAxisLabel"
+  [xAxisLabel]="xAxisLabel"
+  [yAxisLabel]="yAxisLabel"
+  (select)="onSelect($event)"
+  (activate)="onActivate($event)"
+  (deactivate)="onDeactivate($event)">
+</ngx-charts-bar-horizontal>
+            </div>
+        </div>
+    </div>
+</div>
