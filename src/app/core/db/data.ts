@@ -128,54 +128,49 @@ export var multi = [
 
   export var single = [
     {
-      "name": "Traiter",
-      "value": 19000
+      "name": "Traités",
+      "value": 300
     },
     {
-      "name": "Imprimer",
-      "value": 50000
+      "name": "Imprimés",
+      "value": 104
     },
     {
-      "name": "Reçus",
-      "value": 72500
+      "name": "Retour Ged",
+      "value": 100
     },
     {
-      "name": "Expedie",
-      "value": 31500
+      "name": "Expédiés",
+      "value": 90
     }
   ];
 
   export var single2 = [
     {
-      "name": "Total NSI",
-      "value": 173000
+      "name": "Total Numen",
+      "value": 594
     },{
-      "name": "Traiter",
-      "value": 19000
+      "name": "Traités",
+      "value": 300
     },
     {
-      "name": "Imprimer",
-      "value": 50000
+      "name": "Imprimés",
+      "value": 104
     },
     {
-      "name": "Reçus",
-      "value": 72500
+      "name": "Expédiés",
+      "value": 90
     },
     {
-      "name": "Expedie",
-      "value": 31500
-    }
-    ,
-    {
-      "name": "Totale GED",
-      "value": 103000
+      "name": "Retour GED",
+      "value": 100
     }
   ];
   
   export var single1 = [
     {
       "name": "Totale GED",
-      "value": 8940000
+      "value": 594
     }
   ];
 

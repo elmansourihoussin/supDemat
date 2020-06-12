@@ -9,20 +9,20 @@ export class DocumentService {
 
 private  apiUrl: string;
 
-  constructor(private http: HttpClient) {
+  constructor(private _http: HttpClient) {
     this.apiUrl = 'http://' + environment.settings.backend;
   }
 
 
   getAlldocuments() {
     console.log(`apiUrl => ${this.apiUrl}/getAll`);
-    return this.http.get(`${this.apiUrl}/getAll`);
+    return this._http.get(`${this.apiUrl}/getAll`);
     }
 
 
     getByDate(data) {
       console.log('Date ', data.dt_debut)
-      return this.http.post('http://localhost:8080/getbyDate', {
+      return this._http.post('http://localhost:8080/getbyDate', {
         document_DATE_ENREG: '2017-01-11T11:53:15.000+0000'
       }, {
         headers: new HttpHeaders()
