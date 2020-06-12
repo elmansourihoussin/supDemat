@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { single, single1, multi, single2 } from '@core/db/data';
+import { supDAnimations } from '@core/animations';
 
 @Component({
   selector: 'app-accueil',
   templateUrl: './accueil.component.html',
-  styleUrls: ['./accueil.component.scss']
+  styleUrls: ['./accueil.component.scss'],
+  animations: supDAnimations
 })
 export class AccueilComponent  {
 
@@ -20,6 +22,46 @@ export class AccueilComponent  {
 
   single2: any[];
   single1: any[];
+
+  items = [ 
+    {
+     name: 'pa1_u0011_vir_aaaammjj.dat',
+     nombre: 30
+    },{
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30
+    }, {
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30
+    }, {
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30
+    }, {
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50
+    }
+]
 
   // options
   gradient: boolean = true;

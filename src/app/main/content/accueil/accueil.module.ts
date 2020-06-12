@@ -6,6 +6,7 @@ import { Charts5Component } from './charts5/charts5.component';
 import { HeaderAccueilComponent } from './header-accueil/header-accueil.component';
 import { SidebarLeftAccueilComponent } from './sidebar-left-accueil/sidebar-left-accueil.component';
 import { SidebarRightAccueilComponent } from './sidebar-right-accueil/sidebar-right-accueil.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,8 +17,8 @@ import { SidebarRightAccueilComponent } from './sidebar-right-accueil/sidebar-ri
     SidebarRightAccueilComponent
   ],
   imports: [
-    SharedModule
-    
+    SharedModule,
+    BrowserAnimationsModule
   ]
 })
 export class AccueilModule { }
