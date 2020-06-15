@@ -23,45 +23,176 @@ export class AccueilComponent  {
   single2: any[];
   single1: any[];
 
+
+  detailsFlux: any[];
+  selectedItem;
+
   items = [ 
     {
      name: 'pa1_u0011_vir_aaaammjj.dat',
-     nombre: 30
-    },{
-      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 30
-    }, {
-      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 30
+     nombre: 30,
+     details: {
+       dateEnvoi : '02/02/2019',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 15,
+       expedies: 5,
+       traites: 10,
+       notyif_OK: 'OK'
+     }
     }, {
       name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24
+      nombre: 24,
+     details: {
+       dateEnvoi : '12/02/2019',
+       dateReception: '03/04/2020',
+       recus: 24,
+       imprimes: 10,
+       expedies: 5,
+       traites: 9,
+       notyif_OK: 'KO'
+     }
     }, {
       name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50
+      nombre: 50,
+     details: {
+       dateEnvoi : '13/02/2020',
+       dateReception: '03/04/2020',
+       recus: 50,
+       imprimes: 15,
+       expedies: 12,
+       traites: 28,
+       notyif_OK: 'OK'
+     }
     }, {
       name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 30
+      nombre: 30,
+     details: {
+       dateEnvoi : '01/02/2020',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 10,
+       expedies: 10,
+       traites: 10,
+       notyif_OK: 'KO'
+     }
     }, {
       name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24
+      nombre: 24,
+     details: {
+       dateEnvoi : '12/02/2020',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 15,
+       expedies: 5,
+       traites: 10,
+       notyif_OK: 'OK'
+     }
     }, {
       name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50
+      nombre: 50,
+     details: {
+       dateEnvoi : '10/02/2020',
+       dateReception: '03/04/2020',
+       recus: 50,
+       imprimes: 15,
+       expedies: 12,
+       traites: 28,
+       notyif_OK: 'KO'
+     }
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30,
+     details: {
+       dateEnvoi : '12/03/2020',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 15,
+       expedies: 5,
+       traites: 10,
+       notyif_OK: ''
+     }
+    }, {
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24,
+     details: {
+       dateEnvoi : '14/02/2019',
+       dateReception: '03/04/2020',
+       recus: 50,
+       imprimes: 15,
+       expedies: 12,
+       traites: 28,
+       notyif_OK: ''
+     }
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50,
+     details: {
+       dateEnvoi : '15/02/2019',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 15,
+       expedies: 5,
+       traites: 10,
+       notyif_OK: ''
+     }
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30,
+     details: {
+       dateEnvoi : '12/02/2020',
+       dateReception: '03/04/2020',
+       recus: 50,
+       imprimes: 15,
+       expedies: 12,
+       traites: 28,
+       notyif_OK: ''
+     }
+    }, {
+      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+      nombre: 24,
+     details: {
+       dateEnvoi : '12/02/2020',
+       dateReception: '03/04/2020',
+       recus: 30,
+       imprimes: 15,
+       expedies: 5,
+       traites: 10,
+       notyif_OK: 'KO'
+     }
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50,
+      details: {
+        dateEnvoi : '12/02/2020',
+        dateReception: '03/04/2020',
+        recus: 30,
+        imprimes: 15,
+        expedies: 5,
+        traites: 10,
+        notyif_OK: 'OK'
+      }
     }
-]
+];
+
+selecteItem(item) {
+  console.log('Log ' , item.details);
+  this.selectedItem = item.details;
+  this.detailsFlux = [
+            {
+              "name": "Traités",
+              "value": item.details.traites
+            },
+            {
+              "name": "Imprimés",
+              "value": item.details.imprimes
+            },
+            {
+              "name": "Expédiés",
+              "value": item.details.expedies
+            }
+          ];
+}
 
   // options
   gradient: boolean = true;
@@ -95,6 +226,8 @@ export class AccueilComponent  {
     Object.assign(this, { single });
     Object.assign(this, { single1 });
     Object.assign(this, { single2 });
+
+    //Object.assign(this, { this.detailsFlux });
    // this.view = [innerWidth / 1.3, 200];
     //this.viewLineChart= [innerWidth / 1.3, 250];
   }
