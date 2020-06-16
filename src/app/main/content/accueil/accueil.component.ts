@@ -34,6 +34,9 @@ export class AccueilComponent  {
      details: {
        dateEnvoi : '02/02/2019',
        dateReception: '03/04/2020',
+       dateImrome: '05/04/2020',
+       dateExpedie: '22/03/2020',
+       dateTraite: '12/11/2019',
        recus: 30,
        imprimes: 15,
        expedies: 5,
@@ -46,6 +49,9 @@ export class AccueilComponent  {
      details: {
        dateEnvoi : '12/02/2019',
        dateReception: '03/04/2020',
+       dateImrome: '05/04/2020',
+       dateExpedie: '22/03/2020',
+       dateTraite: '12/11/2019',
        recus: 24,
        imprimes: 10,
        expedies: 5,
@@ -58,6 +64,9 @@ export class AccueilComponent  {
      details: {
        dateEnvoi : '13/02/2020',
        dateReception: '03/04/2020',
+       dateImrome: '05/04/2020',
+       dateExpedie: '22/03/2020',
+       dateTraite: '12/11/2019',
        recus: 50,
        imprimes: 15,
        expedies: 12,
@@ -66,113 +75,170 @@ export class AccueilComponent  {
      }
     }, {
       name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 30,
+      nombre: 60,
      details: {
        dateEnvoi : '01/02/2020',
        dateReception: '03/04/2020',
+       dateImrome: '05/04/2020',
+       dateExpedie: '25/02/2020',
+       dateTraite: '12/01/2020',
        recus: 30,
-       imprimes: 10,
-       expedies: 10,
-       traites: 10,
+       imprimes: 15,
+       expedies: 30,
+       traites: 15,
        notyif_OK: 'KO'
      }
     }, {
       name: 'pa1_u0016_vir_pres_aaaammjj.dat',
       nombre: 24,
      details: {
-       dateEnvoi : '12/02/2020',
+       dateEnvoi : '12/02/2019',
        dateReception: '03/04/2020',
-       recus: 30,
-       imprimes: 15,
+       dateImrome: '05/04/2020',
+       dateExpedie: '22/03/2020',
+       dateTraite: '12/11/2019',
+       recus: 24,
+       imprimes: 10,
        expedies: 5,
-       traites: 10,
+       traites: 9,
+       notyif_OK: 'KO'
+     }
+    }, {
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 50,
+     details: {
+       dateEnvoi : '13/02/2020',
+       dateReception: '03/04/2020',
+       dateImrome: '05/04/2020',
+       dateExpedie: '22/03/2020',
+       dateTraite: '12/11/2019',
+       recus: 50,
+       imprimes: 15,
+       expedies: 12,
+       traites: 28,
        notyif_OK: 'OK'
      }
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50,
-     details: {
-       dateEnvoi : '10/02/2020',
-       dateReception: '03/04/2020',
-       recus: 50,
-       imprimes: 15,
-       expedies: 12,
-       traites: 28,
-       notyif_OK: 'KO'
-     }
-    }, {
+    },{
       name: 'pa1_u0011_vir_aaaammjj.dat',
       nombre: 30,
-     details: {
-       dateEnvoi : '12/03/2020',
-       dateReception: '03/04/2020',
-       recus: 30,
-       imprimes: 15,
-       expedies: 5,
-       traites: 10,
-       notyif_OK: ''
-     }
-    }, {
-      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24,
-     details: {
-       dateEnvoi : '14/02/2019',
-       dateReception: '03/04/2020',
-       recus: 50,
-       imprimes: 15,
-       expedies: 12,
-       traites: 28,
-       notyif_OK: ''
-     }
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50,
-     details: {
-       dateEnvoi : '15/02/2019',
-       dateReception: '03/04/2020',
-       recus: 30,
-       imprimes: 15,
-       expedies: 5,
-       traites: 10,
-       notyif_OK: ''
-     }
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 30,
-     details: {
-       dateEnvoi : '12/02/2020',
-       dateReception: '03/04/2020',
-       recus: 50,
-       imprimes: 15,
-       expedies: 12,
-       traites: 28,
-       notyif_OK: ''
-     }
-    }, {
-      name: 'pa1_u0016_vir_pres_aaaammjj.dat',
-      nombre: 24,
-     details: {
-       dateEnvoi : '12/02/2020',
-       dateReception: '03/04/2020',
-       recus: 30,
-       imprimes: 15,
-       expedies: 5,
-       traites: 10,
-       notyif_OK: 'KO'
-     }
-    }, {
-      name: 'pa1_u0011_vir_aaaammjj.dat',
-      nombre: 50,
       details: {
-        dateEnvoi : '12/02/2020',
+        dateEnvoi : '02/02/2019',
         dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
         recus: 30,
         imprimes: 15,
         expedies: 5,
         traites: 10,
         notyif_OK: 'OK'
       }
-    }
+     }, {
+       name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+       nombre: 24,
+      details: {
+        dateEnvoi : '12/02/2019',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
+        recus: 24,
+        imprimes: 10,
+        expedies: 5,
+        traites: 9,
+        notyif_OK: 'KO'
+      }
+     }, {
+       name: 'pa1_u0011_vir_aaaammjj.dat',
+       nombre: 50,
+      details: {
+        dateEnvoi : '13/02/2020',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
+        recus: 50,
+        imprimes: 15,
+        expedies: 12,
+        traites: 28,
+        notyif_OK: 'OK'
+      }
+     }, {
+       name: 'pa1_u0011_vir_aaaammjj.dat',
+       nombre: 60,
+      details: {
+        dateEnvoi : '01/02/2020',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '25/02/2020',
+        dateTraite: '12/01/2020',
+        recus: 30,
+        imprimes: 15,
+        expedies: 30,
+        traites: 15,
+        notyif_OK: 'KO'
+      }
+     },{
+      name: 'pa1_u0011_vir_aaaammjj.dat',
+      nombre: 30,
+      details: {
+        dateEnvoi : '02/02/2019',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
+        recus: 30,
+        imprimes: 15,
+        expedies: 5,
+        traites: 10,
+        notyif_OK: 'OK'
+      }
+     }, {
+       name: 'pa1_u0016_vir_pres_aaaammjj.dat',
+       nombre: 24,
+      details: {
+        dateEnvoi : '12/02/2019',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
+        recus: 24,
+        imprimes: 10,
+        expedies: 5,
+        traites: 9,
+        notyif_OK: 'KO'
+      }
+     }, {
+       name: 'pa1_u0011_vir_aaaammjj.dat',
+       nombre: 50,
+      details: {
+        dateEnvoi : '13/02/2020',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '22/03/2020',
+        dateTraite: '12/11/2019',
+        recus: 50,
+        imprimes: 15,
+        expedies: 12,
+        traites: 28,
+        notyif_OK: 'OK'
+      }
+     }, {
+       name: 'pa1_u0011_vir_aaaammjj.dat',
+       nombre: 60,
+      details: {
+        dateEnvoi : '01/02/2020',
+        dateReception: '03/04/2020',
+        dateImrome: '05/04/2020',
+        dateExpedie: '25/02/2020',
+        dateTraite: '12/01/2020',
+        recus: 30,
+        imprimes: 15,
+        expedies: 30,
+        traites: 15,
+        notyif_OK: 'KO'
+      }
+     }
 ];
 
 selecteItem(item) {

@@ -164,10 +164,9 @@
                                     </ul>
                         </div>
                         <div class="card border-left-0 rounded-0 col-md-9 text-center">
-                                    <div class="card-body">
+                                    <div class="card-body p-1">
 
-                                          <div class=" pb-32" 
-                                          style="flex-direction: column; box-sizing: border-box; display: flex; place-content: center; align-items: center;">
+                                          <div style="flex-direction: column; box-sizing: border-box; display: flex; place-content: center; align-items: center;">
                                                 
 
                                                 <div *ngIf="selectedItem != null">
@@ -181,10 +180,13 @@
                         
                                                                   </div>
                                                                   <div class="col-md-12">
-                                                                        <div class="row mp-3 border-top pt-2">
-                                                                              <div class="col-md-4" [@animate]="{value:'*',params:{x:'100%'}}">Date d'enoie : {{selectedItem.dateEnvoi}}</div>
-                                                                              <div class="col-md-4" [@animate]="{value:'*',params:{y:'75%'}}">Date Réception : {{selectedItem.dateReception}}</div>
-                                                                              <div class="col-md-4" [@animate]="{value:'*',params:{x:'50%'}}">{{selectedItem.notyif_OK}}</div>
+                                                                        <div class="row mp-3 pt-2">
+                                                                              <div class="col-md-4 p-2 border border-bottom-0" [@animate]="{value:'*',params:{x:'100%'}}">Date d'envoie : {{selectedItem.dateEnvoi}}</div>
+                                                                              <div class="col-md-4 p-2 border border-bottom-0" [@animate]="{value:'*',params:{y:'75%'}}">Date d'imprimés : {{selectedItem.dateReception}}</div>
+                                                                              <div class="col-md-4 p-2 border border-bottom-0" [@animate]="{value:'*',params:{x:'50%'}}">Date traités : {{selectedItem.dateReception}}</div>
+                                                                              <div class="col-md-4 p-2 border" [@animate]="{value:'*',params:{x:'100%'}}">Date réception : {{selectedItem.dateReception}}</div>
+                                                                              <div class="col-md-4 p-2 border" [@animate]="{value:'*',params:{y:'75%'}}">Date expédiés : {{selectedItem.dateReception}}</div>
+                                                                              <div class="col-md-4 p-2 border" [@animate]="{value:'*',params:{x:'50%'}}">Notification : {{selectedItem.notyif_OK}}</div>
                                                                         </div>
                                                                   </div>
                                                       </div>
@@ -220,7 +222,7 @@
                                     </ngx-charts-advanced-pie-chart>
                               </div>
                         </div>
-                        <div class="col-md-4 border-left">
+                        <div class="col-md-4 p-2 border-left">
                               <ngx-charts-number-card [view]="view1" [scheme]="colorScheme" [results]="single1"
                                     [cardColor]="cardColor" (select)="onSelect($event)">
                               </ngx-charts-number-card>
